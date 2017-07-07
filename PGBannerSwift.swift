@@ -1,5 +1,5 @@
 //
-//  PGBannerSwiftSwift.swift
+//  PGBannerSwift.swift
 //
 //  Created by piggybear on 2017/7/6.
 //  Copyright © 2017年 piggybear. All rights reserved.
@@ -25,7 +25,7 @@ class PGBannerSwift: UIView, UIScrollViewDelegate {
         pageControl.numberOfPages = self.numberOfPages
         return pageControl
     }()
-    open var delegate: PGBannerSwiftDelegate?
+    open var delegate: PGBannerDelegate?
     
     //MARK: - private property
     fileprivate lazy var scrollView: UIScrollView = {
