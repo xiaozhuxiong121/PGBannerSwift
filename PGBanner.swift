@@ -16,7 +16,7 @@ public protocol PGBannerDelegate {
     func selectAction(didselectAtIndex index: NSInteger, didSelectView view: Any);
 }
 
-class PGBanner: UIView, UIScrollViewDelegate {
+public class PGBanner: UIView, UIScrollViewDelegate {
     //MARK: - public property
     public lazy var pageControl: UIPageControl = {
         let width = 15 * self.numberOfPages
@@ -65,15 +65,15 @@ class PGBanner: UIView, UIScrollViewDelegate {
         self.logic()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 }
 
 
 // MARK: - UIScrollViewDelegate
-extension PGBanner {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+public extension PGBanner {
+     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let page = NSInteger((scrollView.contentOffset.x + size.width * 0.5) / size.width)
         if page == self.numberOfPages + 1 {
             self.pageControl.currentPage = 0
