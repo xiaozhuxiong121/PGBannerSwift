@@ -7,8 +7,9 @@ Swift版的 自定义控件无限轮播 + 无限图片轮播
 ```
 pod 'PGBannerSwift'
 
-pod update
 ```
+使用```pod update```安装
+
 # 使用
 1、无限图片轮播
 
