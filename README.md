@@ -13,7 +13,7 @@ pod update
 1、无限图片轮播
 
 ```
-let banner = PGBannerSwift(frame: self.customView.bounds, imageNameList: ["photo1", "photo2", "photo3"], timeInterval: 3.0)
+let banner = PGBanner(frame: self.customView.bounds, imageNameList: ["photo1", "photo2", "photo3"], timeInterval: 3.0)
 banner.delegate = self
 self.view.addSubview(banner)
 
@@ -47,7 +47,7 @@ view0.index = 2
 let view4: CustomView = Bundle.main.loadNibNamed("CustomView", owner: self, options: nil)?.first as! CustomView
 view4.index = 0
 
-let banner = PGBannerSwift(frame: self.customView.bounds, viewList: [view0, view1, view2, view3, view4], timeInterval: 3.0)
+let banner = PGBanner(frame: self.customView.bounds, viewList: [view0, view1, view2, view3, view4], timeInterval: 3.0)
 banner.delegate = self
 self.customView.addSubview(banner)
 

@@ -1,5 +1,5 @@
 //
-//  PGBannerSwift.swift
+//  PGBanner.swift
 //
 //  Created by piggybear on 2017/7/6.
 //  Copyright © 2017年 piggybear. All rights reserved.
@@ -12,20 +12,20 @@ struct Size {
     var height: CGFloat = 0
 }
 
-protocol PGBannerDelegate {
+public protocol PGBannerDelegate {
     func selectAction(didselectAtIndex index: NSInteger, didSelectView view: Any);
 }
 
-class PGBannerSwift: UIView, UIScrollViewDelegate {
+class PGBanner: UIView, UIScrollViewDelegate {
     //MARK: - public property
-    open lazy var pageControl: UIPageControl = {
+    public lazy var pageControl: UIPageControl = {
         let width = 15 * self.numberOfPages
         let frame = CGRect(x: self.size.width / 2 - CGFloat(width / 2), y: self.size.height - 20, width: CGFloat(width), height: 20)
         let pageControl = UIPageControl(frame: frame)
         pageControl.numberOfPages = self.numberOfPages
         return pageControl
     }()
-    open var delegate: PGBannerDelegate?
+    public var delegate: PGBannerDelegate?
     
     //MARK: - private property
     fileprivate lazy var scrollView: UIScrollView = {
@@ -42,7 +42,7 @@ class PGBannerSwift: UIView, UIScrollViewDelegate {
     fileprivate var numberOfPages: NSInteger = 0
     
     //MARK: - system cycle
-    init(frame: CGRect, viewList: Array<Any>, timeInterval: Double) {
+    public init(frame: CGRect, viewList: Array<Any>, timeInterval: Double) {
         super.init(frame: frame)
         self.numberOfPages = viewList.count - 2
         self.timeInterval = timeInterval
@@ -54,7 +54,7 @@ class PGBannerSwift: UIView, UIScrollViewDelegate {
         self.logic()
     }
     
-    init(frame: CGRect, imageNameList: Array<String>, timeInterval: Double) {
+    public init(frame: CGRect, imageNameList: Array<String>, timeInterval: Double) {
         super.init(frame: frame)
         self.numberOfPages = imageNameList.count
         self.timeInterval = timeInterval
@@ -72,7 +72,7 @@ class PGBannerSwift: UIView, UIScrollViewDelegate {
 
 
 // MARK: - UIScrollViewDelegate
-extension PGBannerSwift {
+extension PGBanner {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let page = NSInteger((scrollView.contentOffset.x + size.width * 0.5) / size.width)
         if page == self.numberOfPages + 1 {
@@ -103,7 +103,7 @@ extension PGBannerSwift {
 }
 
 //MARK: - custom method
-extension PGBannerSwift {
+extension PGBanner {
     fileprivate func addView() {
         self.addSubview(scrollView)
         self.addSubview(pageControl)
@@ -177,7 +177,7 @@ extension PGBannerSwift {
 
 
 // MARK: - timer logic
-extension PGBannerSwift {
+extension PGBanner {
     fileprivate func addTimer() {
         self.timer = Timer(timeInterval: self.timeInterval, target: self, selector: #selector(nextImage), userInfo: nil, repeats: true)
         RunLoop.main.add(self.timer!, forMode: .commonModes)
