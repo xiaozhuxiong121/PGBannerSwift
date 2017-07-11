@@ -63,3 +63,6 @@ func selectAction(didselectAtIndex index: NSInteger, didSelectView view: Any) {
 # 博客地址
 [http://www.jianshu.com/p/de09878ba1af
 ](http://www.jianshu.com/p/de09878ba1af)
+
+# OC版本
+[https://github.com/xiaozhuxiong121/PGBanner](https://github.com/xiaozhuxiong121/PGBanner)
