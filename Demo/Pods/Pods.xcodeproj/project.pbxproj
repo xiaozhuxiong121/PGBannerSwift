@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1820BAC33DDAF5BFC21ADD3181B56B0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		3DC86C5F8A576337180C082B45AA3DDC /* PGBannerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C105429C1D29E8968FFE2ED10EA9D27B /* PGBannerSwift-dummy.m */; };
+		01E9D7F0DFBC5EE66A589074F95B5F67 /* UIImageView+PGCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107B84BC1E767687E90024D8D1070CBB /* UIImageView+PGCache.swift */; };
+		108A7ABEC3C76B3F60B573C6C31CC2D9 /* PGBannerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F05C93B2C63DFD1A0A30225981B63854 /* PGBannerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4276394F8D2FC900162578885044C707 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		4CCCA228972771A5C7D430497A7DB2B3 /* PGBannerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4335A9D97FEB61D579A6E9A19BB49FE /* PGBannerSwift-dummy.m */; };
 		662EE33922FFF08EC76DE76EB08B1E80 /* Pods-Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03EA1E60232BFA05817BC26ACB8E68BA /* Pods-Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		925E2BC487B784EA1711E4EA7BAD446D /* PGBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45A0ED237BBFF0FD769DADAF59DE473 /* PGBanner.swift */; };
+		89A7445E803258E5F3A45EBE95A81A90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		994BAF85D227B70670873E31E3AA52C6 /* Pods-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC86D40B890A7B0844F888209CA06F /* Pods-Demo-dummy.m */; };
-		9F91A499B1C6BC281F7BD642CFB7ADDE /* PGBannerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F5172CA8063341230E0C250F6DE859 /* PGBannerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B90DF1362C6963ACF12DEA94BF5E5CDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		CA051A2BAA3447DDABE4044838D4C0BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		E3D19E9FB2483DE65FC49868FD7DEBF4 /* PGBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A1FC2048C2BBD3B69F12C3BD46347 /* PGBanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,51 +23,52 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B058DE513CDD7EDF96AF32780F1D874C;
+			remoteGlobalIDString = FE93ED926029671F8635D435C88944C4;
 			remoteInfo = PGBannerSwift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03EA1E60232BFA05817BC26ACB8E68BA /* Pods-Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Demo-umbrella.h"; sourceTree = "<group>"; };
+		0D309D8E0807A78F9B23A8B1190CEE4F /* PGBannerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PGBannerSwift.xcconfig; sourceTree = "<group>"; };
+		107B84BC1E767687E90024D8D1070CBB /* UIImageView+PGCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+PGCache.swift"; path = "PGBanner/UIImageView+PGCache.swift"; sourceTree = "<group>"; };
 		215246031D891FDDFDF24BE8D2C06028 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Demo.framework; path = "Pods-Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E7A1FC2048C2BBD3B69F12C3BD46347 /* PGBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PGBanner.swift; path = PGBanner/PGBanner.swift; sourceTree = "<group>"; };
 		322419E99883B306EE7EC77959FCC8DF /* Pods-Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Demo.modulemap"; sourceTree = "<group>"; };
 		3CD5A30239C90F1B549B4AB9299ECF16 /* Pods-Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-frameworks.sh"; sourceTree = "<group>"; };
 		3D653C9DA16200D75AD14323AA830C6B /* Pods-Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-resources.sh"; sourceTree = "<group>"; };
-		42703AD680D00BACDFAAF97C99813CC6 /* PGBannerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PGBannerSwift.modulemap; sourceTree = "<group>"; };
-		687231A069FE2BA49B9D0133B965DA43 /* PGBannerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PGBannerSwift.xcconfig; sourceTree = "<group>"; };
 		71940C1CEB7995DC34CFE54CAF1AEF88 /* Pods-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		84BE5BDF0913C6F6F01BFF4712EB8B9D /* PGBannerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PGBannerSwift.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9C4D098EEFD05FFE45917F11CB09D1EB /* PGBannerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PGBannerSwift.framework; path = PGBannerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5F21A5D92088714942E2C33D13908E1 /* PGBannerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PGBannerSwift-prefix.pch"; sourceTree = "<group>"; };
+		B4335A9D97FEB61D579A6E9A19BB49FE /* PGBannerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PGBannerSwift-dummy.m"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C105429C1D29E8968FFE2ED10EA9D27B /* PGBannerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PGBannerSwift-dummy.m"; sourceTree = "<group>"; };
 		C5BC86D40B890A7B0844F888209CA06F /* Pods-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Demo-dummy.m"; sourceTree = "<group>"; };
 		CA19694C0AC41D598DE4ABFEB300E619 /* Pods-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
 		CC6A59B0ADA6CB2F51DAE6508E437829 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		D791977273D295C4873A3E732A8DE064 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DAB0701F8F25395B1ED46510ED4B9797 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
-		E45A0ED237BBFF0FD769DADAF59DE473 /* PGBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PGBanner.swift; sourceTree = "<group>"; };
+		E61C4089F2039FB3C1749E01401BE9FD /* PGBannerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PGBannerSwift-prefix.pch"; sourceTree = "<group>"; };
 		E68F8C86FB3267A3C87983DA9E269889 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6F5172CA8063341230E0C250F6DE859 /* PGBannerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PGBannerSwift-umbrella.h"; sourceTree = "<group>"; };
+		F05C93B2C63DFD1A0A30225981B63854 /* PGBannerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PGBannerSwift-umbrella.h"; sourceTree = "<group>"; };
+		F8F32291E7A396E75C78BC2AB9C051CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5B2F9F89D7B1ACE2AE8A64AC5E16D7CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1820BAC33DDAF5BFC21ADD3181B56B0A /* Foundation.framework in Frameworks */,
-				B90DF1362C6963ACF12DEA94BF5E5CDC /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		844BD45B7AEE3906D38C4858A2316EEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4276394F8D2FC900162578885044C707 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993A4245AA36E4EB924DA67859EAEF36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89A7445E803258E5F3A45EBE95A81A90 /* Foundation.framework in Frameworks */,
+				CA051A2BAA3447DDABE4044838D4C0BD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,24 +90,6 @@
 				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		49825EA33E727B676DDC7A49B45A3000 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				63265E50090E57F73DC96976723EC904 /* PGBannerSwift */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		63265E50090E57F73DC96976723EC904 /* PGBannerSwift */ = {
-			isa = PBXGroup;
-			children = (
-				E45A0ED237BBFF0FD769DADAF59DE473 /* PGBanner.swift */,
-				8E4D43B20516D0FD1663578F6F48612E /* Support Files */,
-			);
-			name = PGBannerSwift;
-			path = PGBannerSwift;
 			sourceTree = "<group>";
 		};
 		6F2351C272926D3E0225FEFC2F9C5D1F /* Targets Support Files */ = {
@@ -130,24 +114,43 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				49825EA33E727B676DDC7A49B45A3000 /* Pods */,
+				C2C2B45B9AC5951C03F7FD8BF0C9C842 /* Pods */,
 				764CF4CD65BA720FC260AB4B6B08E82A /* Products */,
 				6F2351C272926D3E0225FEFC2F9C5D1F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8E4D43B20516D0FD1663578F6F48612E /* Support Files */ = {
+		8F4835C1263F9863FC5826C5B21E40EC /* PGBannerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				D791977273D295C4873A3E732A8DE064 /* Info.plist */,
-				42703AD680D00BACDFAAF97C99813CC6 /* PGBannerSwift.modulemap */,
-				687231A069FE2BA49B9D0133B965DA43 /* PGBannerSwift.xcconfig */,
-				C105429C1D29E8968FFE2ED10EA9D27B /* PGBannerSwift-dummy.m */,
-				A5F21A5D92088714942E2C33D13908E1 /* PGBannerSwift-prefix.pch */,
-				E6F5172CA8063341230E0C250F6DE859 /* PGBannerSwift-umbrella.h */,
+				2E7A1FC2048C2BBD3B69F12C3BD46347 /* PGBanner.swift */,
+				107B84BC1E767687E90024D8D1070CBB /* UIImageView+PGCache.swift */,
+				9AFD903B3C6E5598BAD1BAE51F1EA90C /* Support Files */,
+			);
+			name = PGBannerSwift;
+			path = PGBannerSwift;
+			sourceTree = "<group>";
+		};
+		9AFD903B3C6E5598BAD1BAE51F1EA90C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8F32291E7A396E75C78BC2AB9C051CB /* Info.plist */,
+				84BE5BDF0913C6F6F01BFF4712EB8B9D /* PGBannerSwift.modulemap */,
+				0D309D8E0807A78F9B23A8B1190CEE4F /* PGBannerSwift.xcconfig */,
+				B4335A9D97FEB61D579A6E9A19BB49FE /* PGBannerSwift-dummy.m */,
+				E61C4089F2039FB3C1749E01401BE9FD /* PGBannerSwift-prefix.pch */,
+				F05C93B2C63DFD1A0A30225981B63854 /* PGBannerSwift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PGBannerSwift";
+			sourceTree = "<group>";
+		};
+		C2C2B45B9AC5951C03F7FD8BF0C9C842 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F4835C1263F9863FC5826C5B21E40EC /* PGBannerSwift */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		ECC58720C5754A079F9A150E40E2FCDD /* Pods-Demo */ = {
@@ -179,11 +182,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F792E23F9C76B8BD0959E6D27145B830 /* Headers */ = {
+		D733E76E4414F63ADCA248536CC099FD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F91A499B1C6BC281F7BD642CFB7ADDE /* PGBannerSwift-umbrella.h in Headers */,
+				108A7ABEC3C76B3F60B573C6C31CC2D9 /* PGBannerSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,13 +211,13 @@
 			productReference = 215246031D891FDDFDF24BE8D2C06028 /* Pods_Demo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B058DE513CDD7EDF96AF32780F1D874C /* PGBannerSwift */ = {
+		FE93ED926029671F8635D435C88944C4 /* PGBannerSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0EEEE6D995310C1ABB0EFF916799A1FA /* Build configuration list for PBXNativeTarget "PGBannerSwift" */;
+			buildConfigurationList = C1524007A164529087DAA8E88E4C431B /* Build configuration list for PBXNativeTarget "PGBannerSwift" */;
 			buildPhases = (
-				8B5E2F93857994673F5B7D08CF159A8F /* Sources */,
-				5B2F9F89D7B1ACE2AE8A64AC5E16D7CC /* Frameworks */,
-				F792E23F9C76B8BD0959E6D27145B830 /* Headers */,
+				90C50B024F47F72C45855230C9849AED /* Sources */,
+				993A4245AA36E4EB924DA67859EAEF36 /* Frameworks */,
+				D733E76E4414F63ADCA248536CC099FD /* Headers */,
 			);
 			buildRules = (
 			);
@@ -246,19 +249,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B058DE513CDD7EDF96AF32780F1D874C /* PGBannerSwift */,
+				FE93ED926029671F8635D435C88944C4 /* PGBannerSwift */,
 				7B891B577C27C952137228B54DEA17C8 /* Pods-Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8B5E2F93857994673F5B7D08CF159A8F /* Sources */ = {
+		90C50B024F47F72C45855230C9849AED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				925E2BC487B784EA1711E4EA7BAD446D /* PGBanner.swift in Sources */,
-				3DC86C5F8A576337180C082B45AA3DDC /* PGBannerSwift-dummy.m in Sources */,
+				E3D19E9FB2483DE65FC49868FD7DEBF4 /* PGBanner.swift in Sources */,
+				4CCCA228972771A5C7D430497A7DB2B3 /* PGBannerSwift-dummy.m in Sources */,
+				01E9D7F0DFBC5EE66A589074F95B5F67 /* UIImageView+PGCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,12 +280,46 @@
 		8CFF1447B5A104E02791E6FBBE195591 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PGBannerSwift;
-			target = B058DE513CDD7EDF96AF32780F1D874C /* PGBannerSwift */;
+			target = FE93ED926029671F8635D435C88944C4 /* PGBannerSwift */;
 			targetProxy = 148019726D31EB81548EBA7A59C3A4CD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		090FEADF45AD5D22581BA8EB74619FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D309D8E0807A78F9B23A8B1190CEE4F /* PGBannerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PGBannerSwift/PGBannerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PGBannerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PGBannerSwift/PGBannerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PGBannerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -326,40 +364,6 @@
 			};
 			name = Release;
 		};
-		369A46BE09E753422C8D773CFAC37D4A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 687231A069FE2BA49B9D0133B965DA43 /* PGBannerSwift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PGBannerSwift/PGBannerSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PGBannerSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PGBannerSwift/PGBannerSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PGBannerSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		3B95557296BBB823929FE9043895E58F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC6A59B0ADA6CB2F51DAE6508E437829 /* Pods-Demo.debug.xcconfig */;
@@ -388,6 +392,41 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_Demo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4AFD8D32CC7C5BE4C19079D0DBD9968D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D309D8E0807A78F9B23A8B1190CEE4F /* PGBannerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PGBannerSwift/PGBannerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PGBannerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PGBannerSwift/PGBannerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PGBannerSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -447,41 +486,6 @@
 			};
 			name = Debug;
 		};
-		D04147BE9BD54ABD8496B460948C8032 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 687231A069FE2BA49B9D0133B965DA43 /* PGBannerSwift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PGBannerSwift/PGBannerSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PGBannerSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PGBannerSwift/PGBannerSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PGBannerSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		FA331C948C1918F02E85335C8C5D5FF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DAB0701F8F25395B1ED46510ED4B9797 /* Pods-Demo.release.xcconfig */;
@@ -523,15 +527,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0EEEE6D995310C1ABB0EFF916799A1FA /* Build configuration list for PBXNativeTarget "PGBannerSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D04147BE9BD54ABD8496B460948C8032 /* Debug */,
-				369A46BE09E753422C8D773CFAC37D4A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -546,6 +541,15 @@
 			buildConfigurations = (
 				3B95557296BBB823929FE9043895E58F /* Debug */,
 				FA331C948C1918F02E85335C8C5D5FF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1524007A164529087DAA8E88E4C431B /* Build configuration list for PBXNativeTarget "PGBannerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AFD8D32CC7C5BE4C19079D0DBD9968D /* Debug */,
+				090FEADF45AD5D22581BA8EB74619FF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

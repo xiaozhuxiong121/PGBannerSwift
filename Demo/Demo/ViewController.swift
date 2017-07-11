@@ -12,9 +12,7 @@ class ViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc: BannerViewController = segue.destination as! BannerViewController
-        if Int(segue.identifier!)! == 1 {
-          vc.isImage = true
-        }
+        vc.isImage = Int(segue.identifier!)!
     }
    
 }

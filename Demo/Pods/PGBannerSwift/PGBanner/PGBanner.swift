@@ -40,8 +40,8 @@ public class PGBanner: UIView, UIScrollViewDelegate {
     fileprivate var timer: Timer?
     fileprivate var size: Size = Size()
     fileprivate var numberOfPages: NSInteger = 0
-    
-    //MARK: - system cycle
+    fileprivate var placeholder: UIImage?
+    //MARK: - init
     public init(frame: CGRect, viewList: Array<Any>, timeInterval: Double) {
         super.init(frame: frame)
         self.numberOfPages = viewList.count - 2
@@ -65,6 +65,18 @@ public class PGBanner: UIView, UIScrollViewDelegate {
         self.logic()
     }
     
+    public init(frame: CGRect, imageNameList: Array<String>, placeholderImage placeholder: UIImage?, timeInterval: Double) {
+        super.init(frame: frame)
+        self.placeholder = placeholder
+        self.numberOfPages = imageNameList.count
+        self.timeInterval = timeInterval
+        size.width = frame.size.width
+        size.height = frame.size.height
+        self.addView()
+        self.setupContentWithImageView(imageNameList: imageNameList)
+        self.logic()
+    }
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -72,8 +84,8 @@ public class PGBanner: UIView, UIScrollViewDelegate {
 
 
 // MARK: - UIScrollViewDelegate
-extension PGBanner {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+public extension PGBanner {
+     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let page = NSInteger((scrollView.contentOffset.x + size.width * 0.5) / size.width)
         if page == self.numberOfPages + 1 {
             self.pageControl.currentPage = 0
@@ -151,7 +163,12 @@ extension PGBanner {
             let frame = CGRect(x: CGFloat(index) * size.width, y: 0, width: size.width, height: size.height)
             let imageView = UIImageView(frame: frame)
             imageView.contentMode = .scaleAspectFill
-            imageView.image = UIImage(named: imageNameList[tempIndex])
+            if imageNameList[tempIndex].hasPrefix("http") {
+                
+             imageView.imageWithURL(url:URL(string: imageNameList[tempIndex])!, placeholderImage: self.placeholder)
+            }else {
+                imageView.image = UIImage(named: imageNameList[tempIndex])
+            }
             self.scrollView.addSubview(imageView)
             tempArray.append(imageView)
             index += 1

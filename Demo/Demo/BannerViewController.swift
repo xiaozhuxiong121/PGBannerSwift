@@ -11,7 +11,7 @@ import PGBannerSwift
 
 class BannerViewController: UIViewController {
     @IBOutlet weak var customView: UIView!
-    open var isImage: Bool = false
+    open var isImage: NSInteger = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +20,12 @@ class BannerViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        if self.isImage {
+        if self.isImage == 1 {
             self.setupImageView()
-        }else {
+        }else if self.isImage == 2 {
+            self.setupwebImageView()
+        }
+        else {
             self.setupCustomView()
         }
     }
@@ -51,7 +54,15 @@ class BannerViewController: UIViewController {
     }
     
     func setupImageView() {
+        
         let banner = PGBanner(frame: self.customView.bounds, imageNameList: ["photo1", "photo2", "photo3"], timeInterval: 3.0)
+        banner.delegate = self
+        self.customView.addSubview(banner)
+    }
+    
+    func setupwebImageView() {
+        
+        let banner = PGBanner(frame: self.customView.bounds, imageNameList: ["http://img.zcool.cn/community/05e5e1554af04100000115a8236351.jpg", "http://imgsrc.baidu.com/image/c0%3Dshijue%2C0%2C0%2C245%2C40/sign=b61c57bf06f431ada8df4b7a235fc6da/b58f8c5494eef01f3e82aae8eafe9925bc317d0c.jpg", "http://www.ccarting.com/img/opus/photograph/h000/h41/img201008181910520.jpg"], placeholderImage: UIImage(named: "photo1"), timeInterval: 3.0)
         banner.delegate = self
         self.customView.addSubview(banner)
     }

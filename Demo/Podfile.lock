@@ -1,12 +1,12 @@
 PODS:
-  - PGBannerSwift (1.0.3)
+  - PGBannerSwift (1.0.4)
 
 DEPENDENCIES:
   - PGBannerSwift
 
 SPEC CHECKSUMS:
-  PGBannerSwift: 24fe790007bc9c8bb3450e270a99bd00a5f9d183
+  PGBannerSwift: 0c2bfabf7b0118d63af09a8f69289f93c96efdc3
 
-PODFILE CHECKSUM: 73fb7c216210cc24867cfad0f5ee54e4dc26bec2
+PODFILE CHECKSUM: 95e1607434092fb52e63cea67fc900fb4baeb0c1
 
 COCOAPODS: 1.2.1

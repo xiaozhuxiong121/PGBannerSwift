@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B058DE513CDD7EDF96AF32780F1D874C'
+               BlueprintIdentifier = 'FE93ED926029671F8635D435C88944C4'
                BlueprintName = 'PGBannerSwift'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PGBannerSwift.framework'>
