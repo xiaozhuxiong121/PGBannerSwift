@@ -12,7 +12,7 @@ struct Size {
     var height: CGFloat = 0
 }
 
-public protocol PGBannerDelegate {
+public protocol PGBannerDelegate: NSObjectProtocol {
     func selectAction(didselectAtIndex index: NSInteger, didSelectView view: Any);
 }
 
@@ -25,7 +25,7 @@ public class PGBanner: UIView, UIScrollViewDelegate {
         pageControl.numberOfPages = self.numberOfPages
         return pageControl
     }()
-    public var delegate: PGBannerDelegate?
+    public weak var delegate: PGBannerDelegate?
     
     //MARK: - private property
     fileprivate lazy var scrollView: UIScrollView = {

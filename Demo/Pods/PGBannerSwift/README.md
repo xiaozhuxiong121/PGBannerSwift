@@ -1,4 +1,4 @@
-﻿# PGBannerSwift
+# PGBannerSwift
 Swift版的 自定义控件无限轮播 + 无限图片轮播
 
 ![PGBanner.gif](http://upload-images.jianshu.io/upload_images/1340308-cb071aad23c7d951.gif?imageMogr2/auto-orient/strip)
@@ -32,6 +32,7 @@ func selectAction(didselectAtIndex index: NSInteger, didSelectView view: Any) {
 > 2、一定要把需要轮播的最后一个view放到数组的第一个位置
 
 首先引入```import PGBannerSwift```
+
 ```
 let view1: CustomView = Bundle.main.loadNibNamed("CustomView", owner: self, options: nil)?.first as! CustomView
 view1.index = 0
@@ -60,9 +61,5 @@ func selectAction(didselectAtIndex index: NSInteger, didSelectView view: Any) {
 }
     
 ```
-# 博客地址
-[http://www.jianshu.com/p/de09878ba1af
-](http://www.jianshu.com/p/de09878ba1af)
-
 # OC版本
 [https://github.com/xiaozhuxiong121/PGBanner](https://github.com/xiaozhuxiong121/PGBanner)
